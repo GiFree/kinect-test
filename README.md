@@ -1,0 +1,1 @@
+kinect heat map test
