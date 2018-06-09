@@ -32,7 +32,8 @@
 		socket.on('depthFrame', function(imageBuffer){
 			if(!imageProcessing) {
 				imageProcessing = true;
-				imageWorkerThread.postMessage({ "message": "processImageData", "imageBuffer": imageBuffer });
+        imageWorkerThread.postMessage({ "message": "processImageData", "imageBuffer": imageBuffer });
+        // ctx.putImageData(imageBuffer, 0 , 0);
 			}
 		});
 	</script>

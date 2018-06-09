@@ -1,9 +1,10 @@
-var Kinect2 = require('kinect2'), //change to 'kinect2' in a project of your own
-  express = require('express'),
-  app = express(),
-  server = require('http').createServer(app),
-  io = require('socket.io').listen(server),
-  zlib = require('zlib');
+var Kinect2 = require('kinect2'); //change to 'kinect2' in a project of your own
+const express = require('express');
+const app = express();
+const server = require('http').createServer(app);
+const io = require('socket.io').listen(server);
+const zlib = require('zlib');
+const fs = require('fs');
 
 var kinect = new Kinect2();
 
